@@ -26,7 +26,7 @@ public class FifthActivity extends AppCompatActivity {
         TextView passwordEditText = (TextView) findViewById(R.id.textView7);
 
         Bundle bundle = getIntent().getExtras();
-
+        // getting data
         String username = bundle.getString(KEY_USERNAME);
         String password = bundle.getString(KEY_PASSWORD);
         Bundle b = getIntent().getExtras();
@@ -40,6 +40,7 @@ public class FifthActivity extends AppCompatActivity {
         passwordEditText.setText(password);
 
         long date = System.currentTimeMillis();
+        //adding date and time
 
         SimpleDateFormat sdf = new SimpleDateFormat("MMM  dd, yyyy h:mm a");
         String dateString = sdf.format(date);
